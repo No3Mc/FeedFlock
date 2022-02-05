@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mas.master.cs" Inherits="isd_2.mas" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+ <title>Stock Management</title>
+ <asp:ContentPlaceHolder ID="head" runat="server">
+ </asp:ContentPlaceHolder>
+</head>
+<body>
+ <form id="form1" runat="server">
+ <table style="font-family:Arial">
+ <tr>
+ <td colspan="2" style="width:800px; height:80px; background-color:#08768F; 
+ text-align:center">
+
+     <h1 style ="text-align: center">
+     Poultry Inventory Management
+     </h1>
+     <p style ="text-align: center">
+         <asp:Button ID="Button6" runat="server" Text="Login" float="right"  align ="right" OnClick="Button6_Click" CausesValidation="false" Visible="False" />
+     </p>
+
+      </td>
+     
+
+ </tr>
+     
+
+
+ <tr>
+ <td style="height:500px; background-color:#4175D2; width:150px">
+ 
+     <h1>Menu</h1>
+     <h2>
+         
+         <asp:Button ID="Button1" runat="server" Height="40px" Text="Place Orders" Width="150px" OnClick="Button1_Click" CausesValidation="false" />
+                  <%--<asp:Button ID="Button6" runat="server" Height="40px" Text="Place Orders" Width="150px" OnClick="Button1_Click" BorderStyle="none" BackColor="transparent" CausesValidation="false" />--%>
+
+         
+     </h2>
+              <asp:Button ID="Button2" runat="server" Height="40px" Text="View Contacts" Width="150px" OnClick="Button2_Click" CausesValidation="false" />
+     <h2>
+                  <asp:Button ID="Button3" runat="server" Height="40px" Text="Add stock" Width="150px" CausesValidation="false" OnClick="Button3_Click" />
+     </h2>
+              <asp:Button ID="Button4" runat="server" Height="40px" Text="Tasks" Width="150px" CausesValidation="false" OnClick="Button4_Click" />
+     <h2>
+                  <asp:Button ID="Button5" runat="server" Height="40px" Text="Register Emp" Width="150px" OnClick="Button5_Click" CausesValidation="false" />
+     </h2>
+
+ </td>
+     
+ <td style="height:500px; background-color:#810554; width:650px">
+ <h3 style="visibility: hidden">content</h3> 
+<%--     content place holder--%>
+     <center>
+ <div>
+ <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+ </asp:ContentPlaceHolder>
+ </div>         </center>
+ 
+ </td>
+ </tr>
+ <tr>
+ <td colspan="2" style="background-color:#166C3A; text-align:center">
+     Constructed by Syed Naqvi</td>
+ </tr>
+</table>
+ </form>
+</body>
+</html>
+
+
